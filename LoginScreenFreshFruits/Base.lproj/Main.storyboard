@@ -99,13 +99,127 @@
                     <view key="view" contentMode="scaleToFill" id="vta-UV-Vuf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQr-4q-Rfq" customClass="YellowButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                <rect key="frame" x="40" y="321" width="334" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RL6-Rr-1Oc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Get started">
+                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="GetStartedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="atU-4H-fGG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create An Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUG-BZ-5VS">
+                                <rect key="frame" x="20" y="64" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="GgX-uQ-M6x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fw1-ts-gYC">
+                                <rect key="frame" x="40" y="165" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LS6-pi-tub"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSn-kx-lKV">
+                                <rect key="frame" x="40" y="236" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Dr-WW-fMT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkS-QX-f2k" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                <rect key="frame" x="40" y="389" width="334" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hPr-53-DPq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="I already have an account">
+                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zo-Ge-S1w" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                <rect key="frame" x="40" y="529" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hEf-GR-NUV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="  Continue with Google" image="google.png">
+                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="GoogleRegistration:" destination="0VL-Ak-s6A" eventType="touchUpInside" id="4jy-pm-Wr2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVf-MT-r9w" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                <rect key="frame" x="40" y="589" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VaD-Mw-e4W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="  Continue with Facebook" image="facebook.png">
+                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9f-Jy-hhb" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                <rect key="frame" x="40" y="647" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Uxq-iA-nI8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="  Continue with Apple" image="apple.png">
+                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dG6-O4-Jrt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="SSn-kx-lKV" secondAttribute="trailing" constant="40" id="1gm-H7-fF6"/>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="UUG-BZ-5VS" secondAttribute="trailing" constant="20" id="3wj-Zd-vvq"/>
+                            <constraint firstItem="6zo-Ge-S1w" firstAttribute="top" secondItem="nkS-QX-f2k" secondAttribute="bottom" constant="80" id="BZT-9p-pkQ"/>
+                            <constraint firstItem="nkS-QX-f2k" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="Lnj-Mh-ibM"/>
+                            <constraint firstItem="sVf-MT-r9w" firstAttribute="top" secondItem="6zo-Ge-S1w" secondAttribute="bottom" constant="10" id="Ng2-JA-xBP"/>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="M9f-Jy-hhb" secondAttribute="trailing" constant="40" id="OL3-t3-c4Q"/>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="6zo-Ge-S1w" secondAttribute="trailing" constant="40" id="Uor-he-Plr"/>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="aQr-4q-Rfq" secondAttribute="trailing" constant="40" id="V6a-7I-sa1"/>
+                            <constraint firstItem="SSn-kx-lKV" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="WJW-YH-wfo"/>
+                            <constraint firstItem="SSn-kx-lKV" firstAttribute="top" secondItem="Fw1-ts-gYC" secondAttribute="bottom" constant="21" id="Zyo-WR-Ivv"/>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="sVf-MT-r9w" secondAttribute="trailing" constant="40" id="aPn-7q-f80"/>
+                            <constraint firstItem="M9f-Jy-hhb" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="bjO-aa-bLm"/>
+                            <constraint firstItem="UUG-BZ-5VS" firstAttribute="top" secondItem="dG6-O4-Jrt" secondAttribute="top" constant="20" id="dM3-3z-EJW"/>
+                            <constraint firstItem="UUG-BZ-5VS" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="20" id="dba-Vg-1t6"/>
+                            <constraint firstItem="6zo-Ge-S1w" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="esi-we-gIV"/>
+                            <constraint firstItem="sVf-MT-r9w" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="g4t-ko-Ag6"/>
+                            <constraint firstItem="aQr-4q-Rfq" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="gLc-IV-1fp"/>
+                            <constraint firstItem="aQr-4q-Rfq" firstAttribute="top" secondItem="SSn-kx-lKV" secondAttribute="bottom" constant="35" id="hYJ-5q-PAK"/>
+                            <constraint firstItem="nkS-QX-f2k" firstAttribute="top" secondItem="aQr-4q-Rfq" secondAttribute="bottom" constant="8" id="iKt-Vo-1IJ"/>
+                            <constraint firstItem="M9f-Jy-hhb" firstAttribute="top" secondItem="sVf-MT-r9w" secondAttribute="bottom" constant="8" id="j9G-W2-r8O"/>
+                            <constraint firstItem="Fw1-ts-gYC" firstAttribute="top" secondItem="UUG-BZ-5VS" secondAttribute="bottom" constant="60" id="lfN-Yc-bPw"/>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="nkS-QX-f2k" secondAttribute="trailing" constant="40" id="rK8-Rl-Sji"/>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="Fw1-ts-gYC" secondAttribute="trailing" constant="40" id="tyv-MM-zUF"/>
+                            <constraint firstItem="Fw1-ts-gYC" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="vh6-X5-7dG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANe-37-ihq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1949" y="-94"/>
+            <point key="canvasLocation" x="1947.826086956522" y="-94.419642857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="He3-lw-4z5">
@@ -127,7 +241,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="apple.png" width="30" height="30"/>
+        <image name="facebook.png" width="30" height="30"/>
         <image name="fruitsLogo.png" width="512" height="512"/>
+        <image name="google.png" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

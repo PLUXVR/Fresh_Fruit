@@ -31,14 +31,7 @@ class RegViewController: UIViewController {
         
         view.sendSubviewToBack(backgroundImageView)
     }
+    @IBAction func GoogleRegistration(_ sender: Any) {
+        
+    }
 }
-//extension UIImageView{
-//    func blurImage()
-//    {
-//        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.systemChromeMaterial)
-//        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-//        blurEffectView.alpha = 1
-//        blurEffectView.frame = self.bounds
-//        self.addSubview(blurEffectView)
-//    }
-//}

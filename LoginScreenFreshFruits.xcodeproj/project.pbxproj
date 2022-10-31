@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F6A9A5E2906B32C002A6886 /* pngwing.com (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6A9A5D2906B32C002A6886 /* pngwing.com (1).png */; };
+		9F0F5E72290FD63700037797 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0F5E71290FD63700037797 /* facebook.png */; };
+		9F0F5E74290FD63A00037797 /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0F5E73290FD63A00037797 /* google.png */; };
+		9F0F5E76290FD66800037797 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0F5E75290FD66800037797 /* apple.png */; };
 		9F6A9A602906B44D002A6886 /* Fruits.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6A9A5F2906B44C002A6886 /* Fruits.png */; };
 		9F6A9A622906BF5B002A6886 /* fruitsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6A9A612906BF5B002A6886 /* fruitsLogo.png */; };
 		9F72466529068C3000393DF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72466429068C3000393DF5 /* AppDelegate.swift */; };
@@ -22,7 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9F6A9A5D2906B32C002A6886 /* pngwing.com (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com (1).png"; sourceTree = "<group>"; };
+		9F0F5E71290FD63700037797 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		9F0F5E73290FD63A00037797 /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = google.png; path = ../../../../../../../Downloads/google.png; sourceTree = "<group>"; };
+		9F0F5E75290FD66800037797 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		9F6A9A5F2906B44C002A6886 /* Fruits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fruits.png; sourceTree = "<group>"; };
 		9F6A9A612906BF5B002A6886 /* fruitsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruitsLogo.png; sourceTree = "<group>"; };
 		9F72466129068C3000393DF5 /* LoginScreenFreshFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginScreenFreshFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,8 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				9F6A9A5F2906B44C002A6886 /* Fruits.png */,
+				9F0F5E73290FD63A00037797 /* google.png */,
+				9F0F5E75290FD66800037797 /* apple.png */,
+				9F0F5E71290FD63700037797 /* facebook.png */,
 				9F6A9A612906BF5B002A6886 /* fruitsLogo.png */,
-				9F6A9A5D2906B32C002A6886 /* pngwing.com (1).png */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -160,10 +166,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F72467129068C3100393DF5 /* LaunchScreen.storyboard in Resources */,
+				9F0F5E74290FD63A00037797 /* google.png in Resources */,
+				9F0F5E72290FD63700037797 /* facebook.png in Resources */,
 				9F72466E29068C3100393DF5 /* Assets.xcassets in Resources */,
+				9F0F5E76290FD66800037797 /* apple.png in Resources */,
 				9F72466C29068C3000393DF5 /* Main.storyboard in Resources */,
 				9F6A9A602906B44D002A6886 /* Fruits.png in Resources */,
-				9F6A9A5E2906B32C002A6886 /* pngwing.com (1).png in Resources */,
 				9F6A9A622906BF5B002A6886 /* fruitsLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
