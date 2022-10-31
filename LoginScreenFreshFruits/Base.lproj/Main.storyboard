@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lvk-pp-4XC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginScreenFreshFruits" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fruitsLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="x0R-ZU-gJ3">
+                                <rect key="frame" x="82" y="143" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="j9Q-aw-2Nd"/>
+                                    <constraint firstAttribute="width" constant="250" id="n7T-A1-NCe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey! Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bj-d8-fZ1">
+                                <rect key="frame" x="40" y="458" width="334" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="NKS-ed-y00"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We deliver on-demand organic fresh fruits directly from your nearby farms." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqe-6u-lKB">
+                                <rect key="frame" x="40" y="499" width="334" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kpZ-sG-BJu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                <color key="textColor" red="0.68235301969999995" green="0.68235301969999995" blue="0.68627452850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS5-q6-qwU" customClass="YellowButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                <rect key="frame" x="40" y="626" width="334" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="q9S-gf-mQp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Get started">
+                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="GetStartedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ihw-JA-TE5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTH-d8-ibX" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                <rect key="frame" x="40" y="700" width="334" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3Qy-Zy-dEg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="I already have an account">
+                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nS5-q6-qwU" firstAttribute="top" secondItem="sqe-6u-lKB" secondAttribute="bottom" constant="67" id="4DE-XO-oNE"/>
+                            <constraint firstItem="nS5-q6-qwU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="74A-zt-4eD"/>
+                            <constraint firstItem="x0R-ZU-gJ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9qA-vZ-1f1"/>
+                            <constraint firstItem="sqe-6u-lKB" firstAttribute="firstBaseline" secondItem="4Bj-d8-fZ1" secondAttribute="baseline" constant="24" id="Cdi-Fd-CT1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nS5-q6-qwU" secondAttribute="trailing" constant="40" id="E9B-tK-T5G"/>
+                            <constraint firstItem="sqe-6u-lKB" firstAttribute="leading" secondItem="4Bj-d8-fZ1" secondAttribute="leading" id="HH7-hK-JyA"/>
+                            <constraint firstItem="x0R-ZU-gJ3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-180" id="O8M-oM-ygD"/>
+                            <constraint firstItem="fTH-d8-ibX" firstAttribute="top" secondItem="nS5-q6-qwU" secondAttribute="bottom" constant="14" id="P4o-OH-oBg"/>
+                            <constraint firstItem="4Bj-d8-fZ1" firstAttribute="top" secondItem="x0R-ZU-gJ3" secondAttribute="bottom" constant="65" id="T6o-vT-yg7"/>
+                            <constraint firstItem="fTH-d8-ibX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="e8o-Xx-gWO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fTH-d8-ibX" secondAttribute="trailing" constant="40" id="htX-Md-fL3"/>
+                            <constraint firstItem="4Bj-d8-fZ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ozb-ZX-msY"/>
+                            <constraint firstItem="sqe-6u-lKB" firstAttribute="trailing" secondItem="4Bj-d8-fZ1" secondAttribute="trailing" id="xVr-zF-mEe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Bj-d8-fZ1" secondAttribute="trailing" constant="20" id="ybE-LI-ndE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oSa-57-aLW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="-94"/>
+        </scene>
+        <!--Reg View Controller-->
+        <scene sceneID="nes-AR-fGa">
+            <objects>
+                <viewController storyboardIdentifier="RegViewController" id="0VL-Ak-s6A" customClass="RegViewController" customModule="LoginScreenFreshFruits" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vta-UV-Vuf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dG6-O4-Jrt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ANe-37-ihq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1949" y="-94"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="He3-lw-4z5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lvk-pp-4XC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yaU-8L-q5P">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rfX-MW-HaO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NMn-v1-lSD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302.89855072463769" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fruitsLogo.png" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
