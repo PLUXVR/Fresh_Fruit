@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9F72466029068C3000393DF5"
+               BuildableName = "LoginScreenFreshFruits.app"
+               BlueprintName = "LoginScreenFreshFruits"
+               ReferencedContainer = "container:LoginScreenFreshFruits.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9F72466029068C3000393DF5"
+            BuildableName = "LoginScreenFreshFruits.app"
+            BlueprintName = "LoginScreenFreshFruits"
+            ReferencedContainer = "container:LoginScreenFreshFruits.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
