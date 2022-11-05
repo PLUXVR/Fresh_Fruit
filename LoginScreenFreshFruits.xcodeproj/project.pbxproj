@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3028347DC1F138F09C751423 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028338604127A3617856641 /* UIViewController.swift */; };
 		30283C3A2794FC3C72455D33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 302831730A1EFEED7CA9D439 /* GoogleService-Info.plist */; };
 		51088EA5A6613D3FBE578BC2 /* Pods_LoginScreenFreshFruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FEFF5C5AF198AC425FECED /* Pods_LoginScreenFreshFruits.framework */; };
 		9F0F5E72290FD63700037797 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0F5E71290FD63700037797 /* facebook.png */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		302831730A1EFEED7CA9D439 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3028338604127A3617856641 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		4A00B804AB5D3B90BDF2DA8E /* Pods-LoginScreenFreshFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreenFreshFruits.release.xcconfig"; path = "Target Support Files/Pods-LoginScreenFreshFruits/Pods-LoginScreenFreshFruits.release.xcconfig"; sourceTree = "<group>"; };
 		9F0F5E71290FD63700037797 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		9F0F5E75290FD66800037797 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				9F72466F29068C3100393DF5 /* LaunchScreen.storyboard */,
 				9F72467229068C3100393DF5 /* Info.plist */,
 				302831730A1EFEED7CA9D439 /* GoogleService-Info.plist */,
+				3028338604127A3617856641 /* UIViewController.swift */,
 			);
 			path = LoginScreenFreshFruits;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				9F72466729068C3000393DF5 /* SceneDelegate.swift in Sources */,
 				9FA52DFC290A5C6C00055318 /* YellowButton.swift in Sources */,
 				9FA52DFE290A5E4600055318 /* WhiteButton.swift in Sources */,
+				3028347DC1F138F09C751423 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
