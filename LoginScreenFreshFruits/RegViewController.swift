@@ -12,6 +12,7 @@ class RegViewController: UIViewController {
     
     override func viewDidLoad() {
     super.viewDidLoad()
+//        title = "RegViewController"
        setBackground()
     }
     func setBackground () {

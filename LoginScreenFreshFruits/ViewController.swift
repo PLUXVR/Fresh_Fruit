@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        title = "ViewController"
         setBackground()
     }
 
@@ -35,9 +36,9 @@ class ViewController: UIViewController {
         view.sendSubviewToBack(backgroundImageView)
     }
     @IBAction func GetStartedButton(_ sender: UIButton) {
-        let regViewController = storyboard?.instantiateViewController(withIdentifier: "RegViewController")
-        let regControler = regViewController as! RegViewController
-        self.navigationController?.pushViewController(regViewController!, animated: true)
+//        let regViewController = storyboard?.instantiateViewController(withIdentifier: "RegViewController")
+//        let regControler = regViewController as! RegViewController
+//        self.navigationController?.pushViewController(regViewController!, animated: true)
 
     }
 }

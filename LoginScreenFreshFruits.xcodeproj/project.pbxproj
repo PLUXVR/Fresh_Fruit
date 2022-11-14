@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		9F0F5E71290FD63700037797 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
-		9F0F5E73290FD63A00037797 /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = google.png; path = ../../../../../../../Downloads/google.png; sourceTree = "<group>"; };
+		9F0F5E73290FD63A00037797 /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = google.png; path = "../../../../../Media Files for DEV/Icons/google.png"; sourceTree = "<group>"; };
 		9F0F5E75290FD66800037797 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		9F6A9A5F2906B44C002A6886 /* Fruits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fruits.png; sourceTree = "<group>"; };
 		9F6A9A612906BF5B002A6886 /* fruitsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruitsLogo.png; sourceTree = "<group>"; };
