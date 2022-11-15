@@ -8,6 +8,7 @@
 import UIKit
 
 class RegViewController: UIViewController {
+    @IBOutlet weak var nameField: UITextField!
     let backgroundImageView = UIImageView()
     
     override func viewDidLoad() {
