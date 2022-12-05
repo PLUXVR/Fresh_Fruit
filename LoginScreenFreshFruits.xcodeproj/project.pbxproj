@@ -19,10 +19,10 @@
 		9F72466C29068C3000393DF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F72466A29068C3000393DF5 /* Main.storyboard */; };
 		9F72466E29068C3100393DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F72466D29068C3100393DF5 /* Assets.xcassets */; };
 		9F72467129068C3100393DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F72466F29068C3100393DF5 /* LaunchScreen.storyboard */; };
+		9F9753B6292BF04400375C7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F9753B5292BF04400375C7F /* GoogleService-Info.plist */; };
 		9FA52DFC290A5C6C00055318 /* YellowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA52DFB290A5C6C00055318 /* YellowButton.swift */; };
 		9FA52DFE290A5E4600055318 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA52DFD290A5E4600055318 /* WhiteButton.swift */; };
 		9FA52E00290A92AE00055318 /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA52DFF290A92AE00055318 /* RegViewController.swift */; };
-		9FFE8518292786B000123D1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FFE8517292786B000123D1F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +42,10 @@
 		9F72466D29068C3100393DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F72467029068C3100393DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F72467229068C3100393DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F9753B5292BF04400375C7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9FA52DFB290A5C6C00055318 /* YellowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowButton.swift; sourceTree = "<group>"; };
 		9FA52DFD290A5E4600055318 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
 		9FA52DFF290A92AE00055318 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
-		9FFE8517292786B000123D1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 				9F72466829068C3000393DF5 /* ViewController.swift */,
 				9FA52DFF290A92AE00055318 /* RegViewController.swift */,
 				9F72466A29068C3000393DF5 /* Main.storyboard */,
-				9FFE8517292786B000123D1F /* GoogleService-Info.plist */,
+				9F9753B5292BF04400375C7F /* GoogleService-Info.plist */,
 				9F72466D29068C3100393DF5 /* Assets.xcassets */,
 				9F72466F29068C3100393DF5 /* LaunchScreen.storyboard */,
 				9F72467229068C3100393DF5 /* Info.plist */,
@@ -196,7 +196,7 @@
 			files = (
 				9F72467129068C3100393DF5 /* LaunchScreen.storyboard in Resources */,
 				9F0F5E74290FD63A00037797 /* google.png in Resources */,
-				9FFE8518292786B000123D1F /* GoogleService-Info.plist in Resources */,
+				9F9753B6292BF04400375C7F /* GoogleService-Info.plist in Resources */,
 				9F0F5E72290FD63700037797 /* facebook.png in Resources */,
 				9F72466E29068C3100393DF5 /* Assets.xcassets in Resources */,
 				9F0F5E76290FD66800037797 /* apple.png in Resources */,
@@ -288,6 +288,7 @@
 /* Begin XCBuildConfiguration section */
 		9F72467329068C3100393DF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8B38D9CDB2F3E2CA924E6D /* Pods-LoginScreenFreshFruits.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -349,6 +350,7 @@
 		};
 		9F72467429068C3100393DF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29A0BB2CB2561667522E5D08 /* Pods-LoginScreenFreshFruits.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

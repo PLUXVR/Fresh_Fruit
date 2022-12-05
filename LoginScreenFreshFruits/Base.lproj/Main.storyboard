@@ -155,6 +155,7 @@
                                         </state>
                                         <connections>
                                             <action selector="GetStartedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="atU-4H-fGG"/>
+                                            <action selector="RegistrationButton:" destination="0VL-Ak-s6A" eventType="touchUpInside" id="tQR-WS-fKL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkS-QX-f2k" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
@@ -235,7 +236,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="nameField" destination="Fw1-ts-gYC" id="9ir-n2-c9W"/>
+                        <outlet property="appleAuthButton" destination="M9f-Jy-hhb" id="LPk-Mq-gKa"/>
+                        <outlet property="cancelButton" destination="Krq-4U-Oit" id="hoN-Uo-NQT"/>
+                        <outlet property="createAccountLabel" destination="UUG-BZ-5VS" id="dZT-ru-l3c"/>
+                        <outlet property="emailField" destination="Fw1-ts-gYC" id="MAZ-J3-TAq"/>
+                        <outlet property="faceBookAuthButton" destination="sVf-MT-r9w" id="LzS-BV-Ms3"/>
+                        <outlet property="googleAuthButton" destination="6zo-Ge-S1w" id="vnm-g8-aux"/>
+                        <outlet property="haveAccountButton" destination="nkS-QX-f2k" id="G4L-8Z-WRg"/>
+                        <outlet property="nameField" destination="BaN-ow-cL9" id="u2T-wF-jMP"/>
+                        <outlet property="navBarItem" destination="bSk-Wh-PQ5" id="oba-Ro-6fr"/>
+                        <outlet property="passwordField" destination="SSn-kx-lKV" id="FpV-nc-C2w"/>
+                        <outlet property="registrationButton" destination="aQr-4q-Rfq" id="kWa-zG-FS9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANe-37-ihq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
