@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		877B4814E73123915F7CDAFC /* Pods_LoginScreenFreshFruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F20E5182465793CC8229ADE /* Pods_LoginScreenFreshFruits.framework */; };
+		9F0259BE29B7B1A300689CDB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0259BD29B7B1A300689CDB /* SignInViewController.swift */; };
 		9F0F5E72290FD63700037797 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0F5E71290FD63700037797 /* facebook.png */; };
 		9F0F5E74290FD63A00037797 /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0F5E73290FD63A00037797 /* google.png */; };
 		9F0F5E76290FD66800037797 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0F5E75290FD66800037797 /* apple.png */; };
 		9F4861F029AF440F0062F707 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F4861EF29AF440E0062F707 /* GoogleService-Info.plist */; };
-		9F4861F229AF45820062F707 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4861F129AF45820062F707 /* UserViewController.swift */; };
+		9F4861F429AF560D0062F707 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4861F329AF560D0062F707 /* UsersViewController.swift */; };
+		9F4861F929AF591F0062F707 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4861F829AF591F0062F707 /* ButtonCell.xib */; };
 		9F6A9A602906B44D002A6886 /* Fruits.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6A9A5F2906B44C002A6886 /* Fruits.png */; };
 		9F6A9A622906BF5B002A6886 /* fruitsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6A9A612906BF5B002A6886 /* fruitsLogo.png */; };
 		9F72466529068C3000393DF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72466429068C3000393DF5 /* AppDelegate.swift */; };
@@ -21,6 +23,7 @@
 		9F72466C29068C3000393DF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F72466A29068C3000393DF5 /* Main.storyboard */; };
 		9F72466E29068C3100393DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F72466D29068C3100393DF5 /* Assets.xcassets */; };
 		9F72467129068C3100393DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F72466F29068C3100393DF5 /* LaunchScreen.storyboard */; };
+		9F9A048F29AF5C2200C1D944 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9A048E29AF5C2200C1D944 /* ButtonCell.swift */; };
 		9FA52DFC290A5C6C00055318 /* YellowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA52DFB290A5C6C00055318 /* YellowButton.swift */; };
 		9FA52DFE290A5E4600055318 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA52DFD290A5E4600055318 /* WhiteButton.swift */; };
 		9FA52E00290A92AE00055318 /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA52DFF290A92AE00055318 /* RegViewController.swift */; };
@@ -30,11 +33,13 @@
 		29A0BB2CB2561667522E5D08 /* Pods-LoginScreenFreshFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreenFreshFruits.release.xcconfig"; path = "Target Support Files/Pods-LoginScreenFreshFruits/Pods-LoginScreenFreshFruits.release.xcconfig"; sourceTree = "<group>"; };
 		3F20E5182465793CC8229ADE /* Pods_LoginScreenFreshFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginScreenFreshFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8B38D9CDB2F3E2CA924E6D /* Pods-LoginScreenFreshFruits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreenFreshFruits.debug.xcconfig"; path = "Target Support Files/Pods-LoginScreenFreshFruits/Pods-LoginScreenFreshFruits.debug.xcconfig"; sourceTree = "<group>"; };
+		9F0259BD29B7B1A300689CDB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9F0F5E71290FD63700037797 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		9F0F5E73290FD63A00037797 /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = google.png; path = "../../../WORK SWIFT/Media Files for DEV/Icons/google.png"; sourceTree = "<group>"; };
 		9F0F5E75290FD66800037797 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		9F4861EF29AF440E0062F707 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9F4861F129AF45820062F707 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		9F4861F329AF560D0062F707 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		9F4861F829AF591F0062F707 /* ButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
 		9F6A9A5F2906B44C002A6886 /* Fruits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fruits.png; sourceTree = "<group>"; };
 		9F6A9A612906BF5B002A6886 /* fruitsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruitsLogo.png; sourceTree = "<group>"; };
 		9F72466129068C3000393DF5 /* LoginScreenFreshFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginScreenFreshFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +50,7 @@
 		9F72466D29068C3100393DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F72467029068C3100393DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F72467229068C3100393DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F9A048E29AF5C2200C1D944 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		9FA52DFB290A5C6C00055318 /* YellowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowButton.swift; sourceTree = "<group>"; };
 		9FA52DFD290A5E4600055318 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
 		9FA52DFF290A92AE00055318 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +77,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9F4861F529AF58CC0062F707 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9F4861F729AF59060062F707 /* CommonCell */,
+				9F4861F629AF58F40062F707 /* ButtonCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9F4861F629AF58F40062F707 /* ButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F4861F829AF591F0062F707 /* ButtonCell.xib */,
+				9F9A048E29AF5C2200C1D944 /* ButtonCell.swift */,
+			);
+			path = ButtonCell;
+			sourceTree = "<group>";
+		};
+		9F4861F729AF59060062F707 /* CommonCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonCell;
+			sourceTree = "<group>";
+		};
 		9F72465829068C2F00393DF5 = {
 			isa = PBXGroup;
 			children = (
@@ -92,13 +123,15 @@
 		9F72466329068C3000393DF5 /* LoginScreenFreshFruits */ = {
 			isa = PBXGroup;
 			children = (
+				9F4861F529AF58CC0062F707 /* Cells */,
 				9F72467929068DB800393DF5 /* Products */,
 				9F72467829068DA300393DF5 /* Constraints */,
 				9F72466429068C3000393DF5 /* AppDelegate.swift */,
-				9F4861F129AF45820062F707 /* UserViewController.swift */,
+				9F4861F329AF560D0062F707 /* UsersViewController.swift */,
 				9F72466629068C3000393DF5 /* SceneDelegate.swift */,
 				9F72466829068C3000393DF5 /* ViewController.swift */,
 				9FA52DFF290A92AE00055318 /* RegViewController.swift */,
+				9F0259BD29B7B1A300689CDB /* SignInViewController.swift */,
 				9F4861EF29AF440E0062F707 /* GoogleService-Info.plist */,
 				9F72466A29068C3000393DF5 /* Main.storyboard */,
 				9F72466D29068C3100393DF5 /* Assets.xcassets */,
@@ -149,6 +182,7 @@
 				9F72465E29068C3000393DF5 /* Frameworks */,
 				9F72465F29068C3000393DF5 /* Resources */,
 				81FB720A891E7570E4C0D415 /* [CP] Embed Pods Frameworks */,
+				9F60933D2A3F80E800C026C7 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -204,6 +238,7 @@
 				9F72466E29068C3100393DF5 /* Assets.xcassets in Resources */,
 				9F0F5E76290FD66800037797 /* apple.png in Resources */,
 				9F72466C29068C3000393DF5 /* Main.storyboard in Resources */,
+				9F4861F929AF591F0062F707 /* ButtonCell.xib in Resources */,
 				9F6A9A602906B44D002A6886 /* Fruits.png in Resources */,
 				9F6A9A622906BF5B002A6886 /* fruitsLogo.png in Resources */,
 			);
@@ -251,6 +286,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginScreenFreshFruits/Pods-LoginScreenFreshFruits-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9F60933D2A3F80E800C026C7 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,13 +311,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F4861F229AF45820062F707 /* UserViewController.swift in Sources */,
 				9F72466929068C3000393DF5 /* ViewController.swift in Sources */,
 				9FA52E00290A92AE00055318 /* RegViewController.swift in Sources */,
 				9F72466529068C3000393DF5 /* AppDelegate.swift in Sources */,
 				9F72466729068C3000393DF5 /* SceneDelegate.swift in Sources */,
+				9F4861F429AF560D0062F707 /* UsersViewController.swift in Sources */,
+				9F0259BE29B7B1A300689CDB /* SignInViewController.swift in Sources */,
 				9FA52DFC290A5C6C00055318 /* YellowButton.swift in Sources */,
 				9FA52DFE290A5E4600055318 /* WhiteButton.swift in Sources */,
+				9F9A048F29AF5C2200C1D944 /* ButtonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
