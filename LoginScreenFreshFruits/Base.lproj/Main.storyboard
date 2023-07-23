@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -53,6 +54,7 @@
                                 </state>
                                 <connections>
                                     <action selector="GetStartedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ihw-JA-TE5"/>
+                                    <segue destination="0VL-Ak-s6A" kind="show" id="JHt-Uq-CXX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTH-d8-ibX" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
@@ -86,7 +88,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="4Bj-d8-fZ1" secondAttribute="trailing" constant="20" id="ybE-LI-ndE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="oSa-57-aLW"/>
+                    <navigationItem key="navigationItem" id="oSa-57-aLW">
+                        <barButtonItem key="backBarButtonItem" title=" " style="plain" id="ygf-8a-3oA">
+                            <color key="tintColor" systemColor="systemYellowColor"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,126 +106,328 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQr-4q-Rfq" customClass="YellowButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
-                                <rect key="frame" x="40" y="321" width="334" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="RL6-Rr-1Oc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Get started">
-                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="GetStartedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="atU-4H-fGG"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create An Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUG-BZ-5VS">
-                                <rect key="frame" x="20" y="64" width="374" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="GgX-uQ-M6x"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="108" width="374" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fw1-ts-gYC">
-                                <rect key="frame" x="40" y="165" width="334" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="LS6-pi-tub"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSn-kx-lKV">
-                                <rect key="frame" x="40" y="236" width="334" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="4Dr-WW-fMT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkS-QX-f2k" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
-                                <rect key="frame" x="40" y="389" width="334" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="hPr-53-DPq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="I already have an account">
-                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zo-Ge-S1w" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
-                                <rect key="frame" x="40" y="529" width="334" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="hEf-GR-NUV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="  Continue with Google" image="google.png">
-                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="GoogleRegistration:" destination="0VL-Ak-s6A" eventType="touchUpInside" id="4jy-pm-Wr2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVf-MT-r9w" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
-                                <rect key="frame" x="40" y="589" width="334" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="VaD-Mw-e4W"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="  Continue with Facebook" image="facebook.png">
-                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9f-Jy-hhb" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
-                                <rect key="frame" x="40" y="647" width="334" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Uxq-iA-nI8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="  Continue with Apple" image="apple.png">
-                                    <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="vQr-7h-sJi">
+                                <rect key="frame" x="20" y="177" width="374" height="119"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fw1-ts-gYC">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ss1-wl-UHj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSn-kx-lKV">
+                                        <rect key="frame" x="0.0" y="69" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="I8v-cb-Aqt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-cp-0CP">
+                                <rect key="frame" x="20" y="336" width="374" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQr-4q-Rfq" customClass="YellowButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Buj-OQ-85f"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Get started">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="RegistrationButton:" destination="0VL-Ak-s6A" eventType="touchUpInside" id="tQR-WS-fKL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkS-QX-f2k" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="68" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="fTi-08-aUW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="I already have an account">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="5WD-wA-F3X" kind="push" id="m9P-dK-aup"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Q9o-rw-GG4">
+                                <rect key="frame" x="20" y="524" width="374" height="153"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zo-Ge-S1w" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="stP-JC-yIk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  Continue with Google" image="google.png">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="GoogleRegistration:" destination="0VL-Ak-s6A" eventType="touchUpInside" id="4jy-pm-Wr2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVf-MT-r9w" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="54" width="374" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="rWz-54-qMO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  Continue with Facebook" image="facebook.png">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9f-Jy-hhb" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="108" width="374" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="5e8-1k-628"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  Continue with Apple" image="apple.png">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dG6-O4-Jrt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="SSn-kx-lKV" secondAttribute="trailing" constant="40" id="1gm-H7-fF6"/>
-                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="UUG-BZ-5VS" secondAttribute="trailing" constant="20" id="3wj-Zd-vvq"/>
-                            <constraint firstItem="6zo-Ge-S1w" firstAttribute="top" secondItem="nkS-QX-f2k" secondAttribute="bottom" constant="80" id="BZT-9p-pkQ"/>
-                            <constraint firstItem="nkS-QX-f2k" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="Lnj-Mh-ibM"/>
-                            <constraint firstItem="sVf-MT-r9w" firstAttribute="top" secondItem="6zo-Ge-S1w" secondAttribute="bottom" constant="10" id="Ng2-JA-xBP"/>
-                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="M9f-Jy-hhb" secondAttribute="trailing" constant="40" id="OL3-t3-c4Q"/>
-                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="6zo-Ge-S1w" secondAttribute="trailing" constant="40" id="Uor-he-Plr"/>
-                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="aQr-4q-Rfq" secondAttribute="trailing" constant="40" id="V6a-7I-sa1"/>
-                            <constraint firstItem="SSn-kx-lKV" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="WJW-YH-wfo"/>
-                            <constraint firstItem="SSn-kx-lKV" firstAttribute="top" secondItem="Fw1-ts-gYC" secondAttribute="bottom" constant="21" id="Zyo-WR-Ivv"/>
-                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="sVf-MT-r9w" secondAttribute="trailing" constant="40" id="aPn-7q-f80"/>
-                            <constraint firstItem="M9f-Jy-hhb" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="bjO-aa-bLm"/>
-                            <constraint firstItem="UUG-BZ-5VS" firstAttribute="top" secondItem="dG6-O4-Jrt" secondAttribute="top" constant="20" id="dM3-3z-EJW"/>
-                            <constraint firstItem="UUG-BZ-5VS" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="20" id="dba-Vg-1t6"/>
-                            <constraint firstItem="6zo-Ge-S1w" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="esi-we-gIV"/>
-                            <constraint firstItem="sVf-MT-r9w" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="g4t-ko-Ag6"/>
-                            <constraint firstItem="aQr-4q-Rfq" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="gLc-IV-1fp"/>
-                            <constraint firstItem="aQr-4q-Rfq" firstAttribute="top" secondItem="SSn-kx-lKV" secondAttribute="bottom" constant="35" id="hYJ-5q-PAK"/>
-                            <constraint firstItem="nkS-QX-f2k" firstAttribute="top" secondItem="aQr-4q-Rfq" secondAttribute="bottom" constant="8" id="iKt-Vo-1IJ"/>
-                            <constraint firstItem="M9f-Jy-hhb" firstAttribute="top" secondItem="sVf-MT-r9w" secondAttribute="bottom" constant="8" id="j9G-W2-r8O"/>
-                            <constraint firstItem="Fw1-ts-gYC" firstAttribute="top" secondItem="UUG-BZ-5VS" secondAttribute="bottom" constant="60" id="lfN-Yc-bPw"/>
-                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="nkS-QX-f2k" secondAttribute="trailing" constant="40" id="rK8-Rl-Sji"/>
-                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="Fw1-ts-gYC" secondAttribute="trailing" constant="40" id="tyv-MM-zUF"/>
-                            <constraint firstItem="Fw1-ts-gYC" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="40" id="vh6-X5-7dG"/>
+                            <constraint firstItem="UUG-BZ-5VS" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="20" id="0hd-8c-NS5"/>
+                            <constraint firstItem="vQr-7h-sJi" firstAttribute="top" secondItem="UUG-BZ-5VS" secondAttribute="bottom" constant="40" id="14J-yW-zvD"/>
+                            <constraint firstItem="DdP-cp-0CP" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="20" id="2Sp-bK-pkC"/>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="vQr-7h-sJi" secondAttribute="trailing" constant="20" id="4Ac-nW-JPX"/>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="DdP-cp-0CP" secondAttribute="trailing" constant="20" id="G6s-bp-dWV"/>
+                            <constraint firstItem="UUG-BZ-5VS" firstAttribute="top" secondItem="dG6-O4-Jrt" secondAttribute="top" constant="20" id="KAr-4D-MyW"/>
+                            <constraint firstItem="Q9o-rw-GG4" firstAttribute="top" secondItem="DdP-cp-0CP" secondAttribute="bottom" constant="60" id="Z6W-lN-I2e"/>
+                            <constraint firstItem="vQr-7h-sJi" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="20" id="sZ9-h9-u8a"/>
+                            <constraint firstItem="Q9o-rw-GG4" firstAttribute="leading" secondItem="dG6-O4-Jrt" secondAttribute="leading" constant="20" id="tyS-6H-Zqn"/>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="Q9o-rw-GG4" secondAttribute="trailing" constant="20" id="v8k-CQ-2AF"/>
+                            <constraint firstItem="DdP-cp-0CP" firstAttribute="top" secondItem="vQr-7h-sJi" secondAttribute="bottom" constant="40" id="ySD-y3-yNd"/>
+                            <constraint firstItem="dG6-O4-Jrt" firstAttribute="trailing" secondItem="UUG-BZ-5VS" secondAttribute="trailing" constant="20" id="ztF-0h-0O8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bSk-Wh-PQ5">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="cancel" id="Krq-4U-Oit">
+                            <color key="tintColor" systemColor="systemYellowColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="appleAuthButton" destination="M9f-Jy-hhb" id="LPk-Mq-gKa"/>
+                        <outlet property="cancelButton" destination="Krq-4U-Oit" id="hoN-Uo-NQT"/>
+                        <outlet property="createAccountLabel" destination="UUG-BZ-5VS" id="dZT-ru-l3c"/>
+                        <outlet property="emailField" destination="Fw1-ts-gYC" id="MAZ-J3-TAq"/>
+                        <outlet property="faceBookAuthButton" destination="sVf-MT-r9w" id="LzS-BV-Ms3"/>
+                        <outlet property="googleAuthButton" destination="6zo-Ge-S1w" id="vnm-g8-aux"/>
+                        <outlet property="haveAccountButton" destination="nkS-QX-f2k" id="G4L-8Z-WRg"/>
+                        <outlet property="navBarItem" destination="bSk-Wh-PQ5" id="oba-Ro-6fr"/>
+                        <outlet property="passwordField" destination="SSn-kx-lKV" id="FpV-nc-C2w"/>
+                        <outlet property="registrationButton" destination="aQr-4q-Rfq" id="kWa-zG-FS9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANe-37-ihq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1947.826086956522" y="-94.419642857142847"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="MFD-A5-V08">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="5WD-wA-F3X" customClass="SignInViewController" customModule="LoginScreenFreshFruits" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hzx-6K-YkG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRb-Nj-qHM">
+                                <rect key="frame" x="20" y="108" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="IOJ-Iz-Yww">
+                                <rect key="frame" x="20" y="177" width="374" height="119"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="djO-BA-imN">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TlZ-Nz-27e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="613-oI-8S4">
+                                        <rect key="frame" x="0.0" y="69" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1PH-yy-exU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1Lw-Kr-B1m">
+                                <rect key="frame" x="20" y="336" width="374" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8m-EF-A7E" userLabel="Sign In Button" customClass="YellowButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="uzC-PS-uFk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SignInButton:" destination="5WD-wA-F3X" eventType="touchUpInside" id="52K-Po-I64"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="1O8-LD-7v2">
+                                <rect key="frame" x="20" y="456" width="374" height="153"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vM-b8-doo" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="wiY-Mg-JBZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  Continue with Google" image="google.png">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="GoogleRegistration:" destination="5WD-wA-F3X" eventType="touchUpInside" id="FqM-3o-Qmg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBa-zm-1ET" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="54" width="374" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="TWC-z4-jM2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  Continue with Facebook" image="facebook.png">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CQ-If-tZB" customClass="WhiteButton" customModule="LoginScreenFreshFruits" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="108" width="374" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="MOm-zn-9Rl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  Continue with Apple" image="apple.png">
+                                            <color key="titleColor" red="0.21568629149999999" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Ox-NG-jMj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1O8-LD-7v2" firstAttribute="leading" secondItem="3Ox-NG-jMj" secondAttribute="leading" constant="20" id="BqD-Ze-5aP"/>
+                            <constraint firstItem="3Ox-NG-jMj" firstAttribute="trailing" secondItem="1Lw-Kr-B1m" secondAttribute="trailing" constant="20" id="Et3-LQ-grB"/>
+                            <constraint firstItem="mRb-Nj-qHM" firstAttribute="top" secondItem="3Ox-NG-jMj" secondAttribute="top" constant="20" id="HkV-3b-sRh"/>
+                            <constraint firstItem="IOJ-Iz-Yww" firstAttribute="top" secondItem="mRb-Nj-qHM" secondAttribute="bottom" constant="40" id="Sbe-XA-6Sy"/>
+                            <constraint firstItem="3Ox-NG-jMj" firstAttribute="trailing" secondItem="mRb-Nj-qHM" secondAttribute="trailing" constant="20" id="ZQh-9n-aaD"/>
+                            <constraint firstItem="3Ox-NG-jMj" firstAttribute="trailing" secondItem="IOJ-Iz-Yww" secondAttribute="trailing" constant="20" id="eQr-yj-GEg"/>
+                            <constraint firstItem="3Ox-NG-jMj" firstAttribute="trailing" secondItem="1O8-LD-7v2" secondAttribute="trailing" constant="20" id="f1d-Vd-U4c"/>
+                            <constraint firstItem="1O8-LD-7v2" firstAttribute="top" secondItem="1Lw-Kr-B1m" secondAttribute="bottom" constant="60" id="r6K-b4-u8M"/>
+                            <constraint firstItem="IOJ-Iz-Yww" firstAttribute="leading" secondItem="3Ox-NG-jMj" secondAttribute="leading" constant="20" id="w5J-pC-crQ"/>
+                            <constraint firstItem="1Lw-Kr-B1m" firstAttribute="leading" secondItem="3Ox-NG-jMj" secondAttribute="leading" constant="20" id="z1m-3W-98J"/>
+                            <constraint firstItem="1Lw-Kr-B1m" firstAttribute="top" secondItem="IOJ-Iz-Yww" secondAttribute="bottom" constant="40" id="z5z-96-iDx"/>
+                            <constraint firstItem="mRb-Nj-qHM" firstAttribute="leading" secondItem="3Ox-NG-jMj" secondAttribute="leading" constant="20" id="zwz-Oc-seF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eut-7V-PUi">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="cancel" id="bP7-Y6-df3">
+                            <color key="tintColor" systemColor="systemYellowColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="appleAuthButton" destination="4CQ-If-tZB" id="muN-Z7-yE3"/>
+                        <outlet property="cancelButton" destination="bP7-Y6-df3" id="acB-ah-nHN"/>
+                        <outlet property="createAccountLabel" destination="mRb-Nj-qHM" id="K4S-x0-ASc"/>
+                        <outlet property="emailField" destination="djO-BA-imN" id="59e-zP-cTS"/>
+                        <outlet property="faceBookAuthButton" destination="gBa-zm-1ET" id="ywg-8M-9fH"/>
+                        <outlet property="googleAuthButton" destination="4vM-b8-doo" id="etk-G0-Tjz"/>
+                        <outlet property="navBarItem" destination="Eut-7V-PUi" id="hhc-fz-8dP"/>
+                        <outlet property="passwordField" destination="613-oI-8S4" id="d8f-vQ-GFH"/>
+                        <outlet property="registrationButton" destination="q8m-EF-A7E" id="2g5-Sb-YmP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ZL-ay-7kr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="590"/>
+        </scene>
+        <!--Users View Controller-->
+        <scene sceneID="iAW-C4-ZRf">
+            <objects>
+                <viewController storyboardIdentifier="UsersViewController" id="tOu-C3-TWZ" customClass="UsersViewController" customModule="LoginScreenFreshFruits" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w0T-7f-RSx" customClass="Users">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TQB-yO-PId">
+                                <rect key="frame" x="0.0" y="85" width="414" height="155"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="cQL-K1-sSG"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NgR-VL-uGD">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rOS-tg-Wpi">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qCI-j7-bI8">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ybE-Cp-yyf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TQB-yO-PId" firstAttribute="top" secondItem="ybE-Cp-yyf" secondAttribute="top" constant="41" id="Mzd-iZ-6zA"/>
+                            <constraint firstItem="ybE-Cp-yyf" firstAttribute="trailing" secondItem="TQB-yO-PId" secondAttribute="trailing" id="QJV-HK-xkf"/>
+                            <constraint firstItem="TQB-yO-PId" firstAttribute="leading" secondItem="ybE-Cp-yyf" secondAttribute="leading" id="pLN-be-Zro"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="TQB-yO-PId" id="IyT-Mf-jzW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T3g-61-YyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2718.840579710145" y="-94.419642857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="He3-lw-4z5">
@@ -247,6 +455,9 @@
         <image name="google.png" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

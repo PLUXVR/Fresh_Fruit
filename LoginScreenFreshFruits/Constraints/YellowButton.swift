@@ -8,22 +8,19 @@
 import UIKit
 
 class YellowButton: UIButton {
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupButton()
     }
-    
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupButton()
     }
-    
-    
+
     private func setupButton() {
-        backgroundColor     = UIColor.systemYellow
-        layer.cornerRadius  = frame.size.height/4
+        backgroundColor = UIColor.systemYellow
+        layer.cornerRadius = frame.size.height / 4
 //        setTitleColor(.white, for: .normal)
     }
 }

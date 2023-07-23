@@ -10,39 +10,38 @@ import UIKit
 class ViewController: UIViewController {
     let backgroundImageView = UIImageView()
     let iconImage = UIImageView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+//        title = "ViewController"
         setBackground()
     }
 
-    
-    func setBackground () {
+    func setBackground() {
         view.addSubview(backgroundImageView)
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
         backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        
-        backgroundImageView.image = UIImage(named:"Fruits")
-        
-        backgroundImageView.frame = self.view.bounds
+
+        backgroundImageView.image = UIImage(named: "Fruits")
+
+        backgroundImageView.frame = view.bounds
         backgroundImageView.blurImage()
-        self.view.addSubview(self.backgroundImageView)
-        
-        
+        view.addSubview(backgroundImageView)
+
         view.sendSubviewToBack(backgroundImageView)
     }
-    @IBAction func GetStartedButton(_ sender: UIButton) {
-        let regViewController = storyboard?.instantiateViewController(withIdentifier: "RegViewController")
-        let regControler = regViewController as! RegViewController
-        self.navigationController?.pushViewController(regViewController!, animated: true)
 
+    @IBAction func GetStartedButton(_: UIButton) {
+//        let regViewController = storyboard?.instantiateViewController(withIdentifier: "RegViewController")
+//        let regControler = regViewController as! RegViewController
+//        self.navigationController?.pushViewController(regViewController!, animated: true)
     }
 }
 
-//@objc func stepNexButtonTaped(sender: UIButton){
+// @objc func stepNexButtonTaped(sender: UIButton){
 //    let calculateController = storyboard?.instantiateViewController(withIdentifier: "CalculatingViewController")
 //    let newControler = calculateController as! CalculatingViewController
 //    if self.routeDistance != nil {
@@ -55,15 +54,14 @@ class ViewController: UIViewController {
 //    }
 //
 //
-//}
+// }
 
-extension UIImageView{
-    func blurImage()
-    {
+extension UIImageView {
+    func blurImage() {
         let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.systemChromeMaterial)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.alpha = 1
-        blurEffectView.frame = self.bounds
-        self.addSubview(blurEffectView)
+        blurEffectView.frame = bounds
+        addSubview(blurEffectView)
     }
 }
